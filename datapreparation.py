@@ -77,9 +77,8 @@ def midfile_to_piano_roll(filepath,instrument_n=0,fs=5):
         output: piano_roll as dataframe
     """
     pm = pretty_midi.PrettyMIDI(filepath)
-    pr=pm.instruments[instrument_n].get_piano_roll(fs)
-    df = pd.DataFrame(pr)
-    return df
+    roll = pm.instruments[instrument_n].get_piano_roll(fs)
+    return roll
 
 def visualize_piano_roll(pianoroll_matrix,fName=None,fs=5):
     """ input: piano roll matrix with shape (number of notes, time steps)

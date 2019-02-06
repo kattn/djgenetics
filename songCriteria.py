@@ -5,3 +5,13 @@ def songLengthRule(song):
         return -100
     else:
         return 0
+
+# Illegal jumps in pitch
+# Pattern maching
+# Suspension
+# First downbeat
+# Thirds downbeat
+# Long notes
+# Pitch contour
+# Speed
+# Base drop
